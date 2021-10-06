@@ -3,8 +3,8 @@ div{color:#ff0;}
 .문어 {color:#f00;}
 .오징어 {color:#00f;}
 
-figure{background: #ff0;}
-feImage img {margin-left:100px;transition:2s;}
-feImage.on img {margin-left:1000px;}
+figure {background: #ff0;}
+figure img {margin-left:100px;transition:2s;}
+figure.on img {margin-left:1000px;}
 
 
