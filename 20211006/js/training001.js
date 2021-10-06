@@ -8,7 +8,7 @@ $(function(){
         $("h1").show();
     });
     $(".나는버튼").on("click",function(){
-        $("figure").toggClass("on")
+        $("figure").toggleClass("on")
     });
 
 });
