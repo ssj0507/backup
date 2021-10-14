@@ -27,7 +27,7 @@
 #se03 .container .case:hover strong {top:0;}
 
 
-#se04 {padding:150px 0;background:#ddd;text-align:center;}
+#se04 {padding:150px 0;background:#fff;text-align:center;}
 #se04 h2 {font-size:30px;font-weight:700;margin-bottom:10px;}
 #se04 h2:after {content:"";display:block;width:40px;height:1px;background:#369;margin:10px auto;}
 #se04 p {font-size:15px;font-weight:300px;margin-bottom:30px;}
