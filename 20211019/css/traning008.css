@@ -42,4 +42,47 @@
 #visual .main_slider figure a {display:block;width:150px;background:#333;margin:0 auto;line-height:30px;opacity:0;transform: translateY(100px);}
 #visual .main_slider figure.on a {opacity:1;transform:translateY(0);transition:0.5s 1s;}
 
+#con01 {padding:100px 0;text-align:center;}
+#con01 h2 {font-size:24px;font-weight:100;letter-spacing:0.5em;margin-bottom:10px;}
+#con01 p {font-size:16px;font-weight:300;letter-spacing:-0.025em;margin-bottom:30px;}
+#con01 .container {display:flex;width:1200px;margin:0 auto;}
+#con01 .container figure {flex:1;padding:0 15px;}
+#con01 .container figure strong {display:block;margin-bottom:20px;} 
+#con01 .container figure a {display: block;width:150px;border:1px solid #ddd;margin:0 auto;line-height:30px;}
+#con01 .container figure a:hover {background: #333;color:#fff;}
+#con01 .container .case {margin-bottom:10px;overflow:hidden;}
+#con01 .container figure:nth-child(2) .case {border-radius:50%;}
+#con01 .container .case:hover {border-radius:50%;}
+#con01 .container .case img {width:100%;transition:0.5s;}
+#con01 .container .case:hover img {transform:scale(1.5) rotateY(180deg);}
+
+
+#con02 {padding:100px 0;background: #f4f4f4;text-align:center;}
+#con02 h2 {font-size:24px;font-weight:100;letter-spacing:0.5em;margin-bottom:10px;}
+#con02 p {font-size:16px;font-weight:300;letter-spacing:-0.025em;margin-bottom:30px;}
+#con02 .container {display:flex;width:1200px;margin:0 auto;}
+#con02 .container figure {flex:1;padding:0 15px;}
+#con02 .container figure img {width:100%;}
+#con02 .container .con {flex:1;padding:0 15px;text-align:left;}
+
+#con02 h3 {font-size:20px;font-weight:100;letter-spacing:0.5em;margin-bottom:20px}
+#con02 p {line-height:1.4;}
+
+#con03 {padding:150px 0;background:url(../img/main_visual01.jpg) no-repeat center center/cover; background-attachment:fixed;color:#fff;text-align:center;}
+#con03 h2 {font-size:24px;font-weight:100;letter-spacing:0.5em;margin-bottom:10px;}
+#con03 p {font-size:16px;font-weight:300;letter-spacing:0.025em;margin-bottom:30px;}
+#con03 i {padding:10px;background:#333;border-radius:50%;margin-left:20px;}
+
+#con04 {padding:150px 0;}
+#con04 .container {display: flex;width:1200px;margin:0 auto;}
+#con04 .container figure {flex:1;padding:0 15px;}
+#con04 .container figure  video {width:100%;}
+#con04 .container .con {flex:1;padding:0 15px;text-align:center;}
+#con04 .container .con i {padding:10px;background:#02af44;color:#fff;font-size:30px;border-radius:30px 0;margin:0 8px;}
+
+#con04 h3 {font-size:24px;font-weight:100;letter-spacing:0.5em;margin-bottom:10px;}
+#con04 p {font-size:16px;font-weight:300;letter-spacing:0.025em;margin-bottom:30px;}
+
+#footer {padding:80px 0;background: #333;color:#fff;font-size:14px;font-weight:300;text-align:center;}
+
 
