@@ -34,13 +34,13 @@ justify-content: center는 display:flex로 가로 배열된 박스들을 가운�
 #customer .container {width:1200px;margin:0 auto;padding:0 15px;}
 
 #customer .tab_menu {display:flex;}
-#customer .tab_menu>li {flex:1;text-align:center;line-height:40px;background: #ddd;}
+#customer .tab_menu>li {flex:1;text-align:center;line-height:40px;background:#ddd;}
 #customer .tab_menu>li~li {border-left:1px solid#ccc;}
 #customer .tab_menu>li.on {background:chocolate;color:#fff;}
 #customer .tab_content>div {display:none;}
 #customer .tab_content>div.on {display:block;}
 
 
-#footer {padding:80px 0 100px 0;background: #333;color:#fff; text-align:center;}
+#footer {padding:80px 0 100px 0;background:#333;color:#fff; text-align:center;}
 
 
