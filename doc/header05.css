@@ -1,6 +1,6 @@
 #wrap {}
 
-#header {position:fixed;top:0;left:0;line-height:100px;;width:100%;color:#fff;transition:1s; z-index:1}
+#header {position:fixed;top:0;left:0;line-height:100px;width:100%;color:#fff;transition:1s; z-index:1}
 #header:hover {background: #fff;color: #333;border-bottom:1px solid #ddd;}
 #header.on {background: #fff;color:#333;line-height:80px;border-bottom:1px solid #ddd;}
 
@@ -24,7 +24,7 @@
 
 #main_visual {position:relative;}
 #main_visual figure {height:600px;}
-#main_visual .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
+#main_visual .itm01 {background:url(../por01/img/main_visual01.jpg) no-repeat center center/cover;}
 #main_visual .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
 #main_visual .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
 
@@ -36,6 +36,7 @@
 #content01 {position:relative; padding:150px 0;text-align:center;}
 #content01 h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom:15px;}
 #content01 p {font-size:12px;margin-bottom:40px;line-height:1.6;}
+
 #content01 .container {width:1200px;margin:0 auto;}
 #content01 .container figure {padding:0 15px;}
 #content01 .container figure img {max-width:100%;}
