@@ -34,7 +34,7 @@ $('#bottom_banner i').on('click',function(){
 });
 
 $('#toTop').on('click',function(){
-    $('html, body'),animate({scrollTop:0},600)
+    $('html, body').animate({scrollTop:0},400)
 });
 
 $(window).on('scroll', function(){
@@ -45,8 +45,8 @@ $(window).on('scroll', function(){
    // $('#toTop').fadeOut()
    // }
    sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
-   $('#scroll_banner').css({top:600+sct})
-})
+   $('#scroll_banner').css({top:300+sct})
+});
 
 $('#left_banner i').on ('click',function(){
     $('#left_banner').toggleClass('on');

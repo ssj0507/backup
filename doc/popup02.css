@@ -85,7 +85,7 @@ justify-content: center는 display:flex로 가로 배열된 박스들을 가운�
 #bottom_banner .btn i {padding:5px;background:#333;transition:0.2s;}
 #bottom_banner .btn i.on {transform:rotate(180deg);}
 
-#toTop {position: fixed;bottom:200px;right:200px;}
+#toTop {display:none; position: fixed;bottom:200px;right:200px;}
 #toTop i {padding:10px;font-size:30px;color:#fff;background: #333;}
 
 
