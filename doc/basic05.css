@@ -100,11 +100,14 @@ body {color:#333;}
 
 
 
-
+/*제품 04 - 글자*/
 
 #product04 {padding:100px 0;background: #f4f4f4;}
 #product04 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
 #product04 p {font-weight:300;margin-bottom:30px;letter-spacing:-0.025em;}
+
+
+/*제품 04 - 사진*/
 
 #product04 .container {display:flex;flex-wrap:wrap;width:1200px;margin: 0 auto;}
 
@@ -113,18 +116,38 @@ body {color:#333;}
 #product04 .container .con figure {padding:0 15px;}
 #product04 .container .con img {max-width:100%;}
 
+
+/*제품 04 - 아이콘*/
+
 #product04 .container .con i {position: absolute;top: 50%;background: #fff;padding:10px;border:1px solid #ddd;}
 #product04 .container .con i.xi-arrow-left {left: 0%;}
 #product04 .container .con i.xi-arrow-right {right: 0%;}
 
 
+/*제품 04 - 사진 효과*/
+
 #product04 .container .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
-#product04 .container .dis h3:after {content:"";display:block;width:15px;height:1px;background: #333;margin:20px auto;}
+#product04 .container .dis h3:after {content:"";display:block;width:15px;height:1px;background: #333;margin:20px 0;}
 #product04 .container .dis p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
 #product04 .container .dis a i {font-size:20px;padding:5px;background: #333;color: #fff; border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
 #product04 .container .dis a:hover i {border-radius:0 0;}
 
 
+/*tab 메뉴*/
+
+#tab {padding:100px 0;background:#f7f7f7;}
+#tab .container {width:1200px;margin:0 auto;padding:0 15px;}
+#tab .tab_menu {display: flex;border-bottom:1px solid #ddd;margin-bottom:10px;}
+#tab .tab_menu li a {display:block;line-height:40px;padding:0 50px;background: #369;color: #fff;text-align:center;}
+#tab .tab_menu li~li {border-left:1px solid#f7f7f7;}
+
+#tab .tab_con {position: relative;height:300px;}
+#tab .tab_con .tab_slider {position: absolute;top: 0;left: 0;width:100%; visibility: hidden;}
+#tab .tab_con .tab_slider.on {visibility:visible;}
+#tab .tab_con figure {padding:0 15px;}
+#tab .tab_con figure img {width:100%;}
+
+/*footer 메뉴*/
 
 #footer {background: #333;color:#f4f4f4;font-weight:300;}
 #footer .container {display:flex;justify-content: space-between; width:1200px;margin:0 auto;line-height:100px;padding: 0 15px;}

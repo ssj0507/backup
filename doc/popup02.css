@@ -88,7 +88,14 @@ justify-content: center는 display:flex로 가로 배열된 박스들을 가운�
 #toTop {display:none; position: fixed;bottom:200px;right:200px;}
 #toTop i {padding:10px;font-size:30px;color:#fff;background: #333;}
 
-
+#top_banner2 {color:#fff;position:relative;}
+#top_banner2 .case {background:#444;height:70px;overflow:hidden;transition:0.4s;}
+#top_banner2 .container {width:1200px;margin:0 auto;padding:15px 15px;}
+#top_banner2 .case.on {height:0;}
+#top_banner2 .btn {position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);text-align:right;width:1200px;padding:0 15px;z-index:999;}
+#top_banner2 .btn i {padding:5px;background:#444;}
+#top_banner2 .btn i:after {content:"close";}
+#top_banner2 .btn i.on:after {content:"open";}
 
 /*#popup01 {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 #popup02 {position:absolute;top:40%;left:40%;transform:translate(-50%,-50%)}
