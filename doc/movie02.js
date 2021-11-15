@@ -9,15 +9,15 @@ $(function(){
         showControls:false,
     });
     $('#visual i.xi-pause').on('click',function(){
-        $('#bgndVideo').YTPause();
+        $('#bgndVideo').YTPPause();
     });
 
     $('#visual i.xi-play').on('click',function(){
-        $('#bgndVideo').YTPlay();
+        $('#bgndVideo').YTPPlay();
     });
 
     $('#visual i.xi-tv').on('click',function(){
-        $('#bgndVideo').YTPFullscreen();
+        $('#bgndVideo').YTPPFullscreen();
     });
 
 
@@ -32,15 +32,15 @@ $(function(){
         optimizeDisplay:false,
     });
     $('#visual i.xi-pause').on('click',function(){
-        $('#bgndVideo').YTPause();
+        $('#bgndVideo').YTPPause();
     });
 
     $('#visual i.xi-play').on('click',function(){
-        $('#bgndVideo').YTPlay();
+        $('#bgndVideo').YTPPlay();
     });
 
     $('#visual i.xi-tv').on('click',function(){
-        $('#bgndVideo').YTPFullscreen();
+        $('#bgndVideo').YTPPFullscreen();
     });
 //--------------------------
 })
