@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --g-c:#5cb75c;
+    --g-r:#d8534f;    
+}
+
+/*
+5cb75c
+d8534f
+5bbfdd
+efac4e
+*/
+.wrap {min-width:1900px;}
+
+
+.header {display:flex;justify-content:space-between;position:fixed;top:0;left:0; padding:0 2rem;line-height:7rem;color: #f2f2f2;width:100%;min-width:1900px; transition:0.5s; z-index:999;}
+.header.on {background: rgba(0,0,0,0.75);}
+
+.header .h1 {width:11.5rem;}
+.header nav>ul {display: flex;font-size:1rem;font-weight:500;}
+.header nav>ul>li>a {display:block;padding:0 0.75rem;}
+.header .right a {font-size:1.5rem;font-weight:700;}
+.header .right i {padding:0.5rem;border:2px solid #fff;border-radius:50%;margin-right:1rem;}
+
+
+
+.visual {position: relative;}
+.visual:after {content:"";display:block;width:100%;height:100%;background:rgba(0,0,0,0.4);position:absolute;top:0;left:0;}
+
+
+.visual .main_slider {}
+.visual .main_slider figure {height:100vh;}
+.visual .itm01 {background:url(./img/bg_intro01.jpg) no-repeat center center/cover;}
+.visual .itm02 {background:url(./img/bg_intro02.jpg) no-repeat center center/cover;}
+.visual .itm03 {background:url(./img/bg_intro03.jpg) no-repeat center center/cover;}
+
+.visual .slogan  {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;width:60rem;z-index:999;}
+
+
+.visual .slogan strong {display: block; font-size:2rem;margin-bottom:1rem;}
+.visual .slogan h2 {font-size:3rem;margin-bottom:1rem;font-family: 'Kaushan Script', 'Noto Sans KR';}
+.visual .slogan p {font-weight:300;line-height:1.618;}
+
+.visual .slick-dots {position: absolute;bottom:3rem;left:0;width:100%; text-align: center;z-index:999;}
+.visual .slick-dots li {display:inline-block; width:5rem;height:0.2rem;background: #fff;border-radius: 0.1rem;margin:0 0.25rem;overflow: hidden;}
+.visual .slick-dots li button {display:none;}
+
+.visual .slick-dots li:after {content:"";display:block;width:0;height:100%;background:#f00;}
+
+.visual .slick-dots li.slick-active:after {width:100%;transition:2s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
