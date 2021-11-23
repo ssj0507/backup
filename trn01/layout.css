@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
 
 :root {
     --g-c:#5cb75c;
@@ -40,7 +40,7 @@ efac4e
 
 
 .visual .slogan strong {display: block; font-size:2rem;margin-bottom:1rem;}
-.visual .slogan h2 {font-size:3rem;margin-bottom:1rem;font-family: 'Kaushan Script', 'Noto Sans KR';}
+.visual .slogan h2 {font-size:3rem;margin-bottom:1rem;font-family: 'Klee One', 'Noto Sans KR';}
 .visual .slogan p {font-weight:300;line-height:1.618;}
 
 .visual .slick-dots {position: absolute;bottom:3rem;left:0;width:100%; text-align: center;z-index:999;}
