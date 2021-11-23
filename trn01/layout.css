@@ -49,7 +49,7 @@ efac4e
 
 .visual .slick-dots li:after {content:"";display:block;width:0;height:100%;background:#f00;}
 
-.visual .slick-dots li.slick-active:after {width:100%;transition:2s;}
+.visual .slick-dots li.slick-active:after {width:100%;transition:3s;}
 
 
 
