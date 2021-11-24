@@ -35,6 +35,7 @@ $(function(){
         $('#product03 .slide_bar>span').css({left:c*100})
     });
 
+    
     $('.pic').slick({
         arrows:false,
         autoplay:true,

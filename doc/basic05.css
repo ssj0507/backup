@@ -100,12 +100,14 @@ body {color:#333;}
 
 
 
-/*제품 04 - 글자*/
+/*제품 04 - 글자  아이콘효과*/
 
 #product04 {padding:100px 0;background: #f4f4f4;}
-#product04 h2 {font-size:24px;font-weight:500;margin-bottom:10px;}
-#product04 p {font-weight:300;margin-bottom:30px;letter-spacing:-0.025em;}
-
+#product04 .container .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
+#product04 .container .dis h3:after {content:"";display:block;width:15px;height:1px;background: #333;margin:20px 0;}
+#product04 .container .dis p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
+#product04 .container .dis a i {font-size:20px;padding:5px;background: #333;color: #fff; border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
+#product04 .container .dis a:hover i {border-radius:0 0;}
 
 /*제품 04 - 사진*/
 
@@ -126,11 +128,7 @@ body {color:#333;}
 
 /*제품 04 - 사진 효과*/
 
-#product04 .container .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
-#product04 .container .dis h3:after {content:"";display:block;width:15px;height:1px;background: #333;margin:20px 0;}
-#product04 .container .dis p {font-weight:300;letter-spacing:-0.025em;margin-bottom:20px;line-height:24px;}
-#product04 .container .dis a i {font-size:20px;padding:5px;background: #333;color: #fff; border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
-#product04 .container .dis a:hover i {border-radius:0 0;}
+
 
 
 /*tab 메뉴*/
