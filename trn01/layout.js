@@ -1,4 +1,8 @@
 $(function(){
+    $('.mopen').on('click', function(){
+        $('nav').toggleClass('on')
+        $('.header .right').toggleClass('on')
+    })
 //---------------------------------------------------
 $(window).on('scroll', function(){
     var sct=$(window).scrollTop(); //var let const 
