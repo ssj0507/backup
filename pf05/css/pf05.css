@@ -119,7 +119,7 @@ body {overflow-x:hidden}
 /*메인 비주얼 - 사진넣기 */
 .main_visual {position: relative;background:url(../img/main_visual01.jpg) no-repeat center center/cover;}
 .main_visual .itm01 {height:100vh;}
-.main_visual .itm01.on {opacity:1;transition:0.5s 3s;}
+.main_visual .itm01.on {opacity:0;transition:0.5s 3s;}
 
 @media screen and (max-width:768px) {
     /*메인 비주얼 - 사진넣기 */
