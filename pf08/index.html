@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정읍 엘리스테이</title>
+    <!--검색엔진-->
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="정읍 엘리스테이">
+    <meta name="description" content="정읍 엘리스테이">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="정읍 엘리스테이">
+    <meta property="og:description" content="정읍 엘리스테이">
+    <meta property="og:url" content="https://ssj0507.github.io/trn02/">
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="canonical" href="https://ssj0507.github.io/pf08/index.html">
+
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/animate.min3.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/pf08.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/pf08.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1>
+                <a href="#!">
+                    <img src="./img/logo_b.png" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul class="depth01">
+                    <li class="map"><a href="#!">위치</a></li>
+                    <li class="res"><a href="#!">예약</a></li>
+                    <li class="gnb_bnt"><a href="#!"><i class="xi-bars"></i></a></li>
+                </ul>
+            </nav>
+            <div class="map_tex">
+                <h2>오시는길</h2>
+                <img src="./img/tag03.png" alt="">
+                <i class="xi-close-thin"></i>
+                <div>
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1642315332042"
+                        class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1642315332042",
+                            "key": "28thr",
+                            "mapWidth": "600",
+                            "mapHeight": "350"
+                        }).render();
+                    </script>
+                </div>
+                <div class="m_t">
+                    <h3>주소</h3>
+                    <span>도로명주소 : <a>전북 정읍시 서당길 14</a></span>
+                    <span class="m">지번주소 : <a>신정동 1602</a></span>
+                    <h4>대중 교통</h4>
+                    <p>택시이용 : <a>정읍역 &#32;<i class="xi-long-arrow-right"></i>&#32;17분소요(요금 11,550원)&#32;<i
+                                class="xi-long-arrow-right"></i>&#32;엘리스테이</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="res_t">
+                <i class="xi-close-thin"></i>
+                <img src="./img/tag02.png" alt="">
+                <img src="./img/tag02.png" alt="">
+                <h2>예약안내</h2>
+                <span></span>
+                <div class="res_text">
+                    <div class="r_t">
+                        <div class="res_t01">
+                            <h3> - 요금안내 -</h3>
+                            <p>프레스트지</p>
+                            <ul class="list">
+                                <li><strong class="title">PRESTIGT_101/201/301</strong> <span>인원 : 기준6명,최대8명</span></li>
+                                <li><span></span>객실가격 : 주중(일~목) 금요일 토요일(공휴일전날) 실시간 예약 참고</span></li>
+                            </ul>
+                            <p>로열 스위트</p>
+                            <ul class="list">
+                                <li><strong class="title">ROYALSUITE_101~2/201~2</strong> <span>인원 : 기준4명,최대6명</span>
+                                </li>
+                                <li><span>객실가격 : 주중(일~목) 금요일 토요일(공휴일전날) 실시간 예약 참고</span></li>
+                            </ul>
+                            <p>프리미어 스파</p>
+                            <ul class="list">
+                                <li><strong class="title">PREMIERSPA_201~701</strong> <span>인원 : 기준2명,최대4명</span></li>
+                                <li>객실가격 : 주중(일~목) 금요일 토요일(공휴일전날)<span>실시간 예약 참고</span></li>
+                            </ul>
+                            <p>프리미어풀</p>
+                            <ul class="list">
+                                <li><strong class="title">PREMIERPOOL_202~702</strong> <span>인원 : 기준2명,최대4명</span></li>
+                                <li>객실가격 : 주중(일~목) 금요일 토요일(공휴일전날)<span>실시간 예약 참고</span></li>
+                            </ul>
+    
+                        </div>
+                        <div class="res_t02">
+                            <h3>- 객실이용시 확인사항 -</h3>
+                            <ul class="list">
+                                <li><strong class="title">- 입실시간: 오후3시 퇴실시간: 오전 11시</strong></li>
+                                <li><strong class="title">- 예약된 인원 외 다른사람의 방문을 제한합니다.</strong></li>
+                                <li><strong class="title">- 입실이 불가능하며 당일 예약 취소와 동일시 되는 상황 : 예약된 인원 이상 왔을 때,<br>&nbsp;&nbsp;애완동물과 동반입실할 때 객실 내에서 해산물 및 고기요리와 튀김류 조리는 삼가주시기 바랍니다.</strong></li>
+                                <li><strong class="title">- 전 객실의 실내는 금연구역이며, 화재 위험이 있는 촛불 및 폭죽사용, 부탄가스 사용은 금지입니다.</strong>
+                                </li>
+                                <li><strong class="title">- 시설물 훼손 및 분실시 책임은 고객님께 부과하오니 객실사용에 신경써 주시기 바랍니다.</strong></li>
+                                
+                                <li><strong class="title">- 마지막 퇴실시에는 실내에 있는 쓰레기는 분리수거해 버려 주시고 <br>&nbsp;&nbsp;사용하신 식기도 세척해 주시기 바랍니다.</strong>
+                                </li>
+                                <li><strong class="title">- 시설물을 이용하시며 개인 안전관리에 각별히 유념해 주시고 <br>&nbsp;&nbsp;본인 부주의에 의한 안전사고는 본인이 책임지게 됩니다.</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="r_t">
+                        <div class="res_t03">
+                            <h3>- 입금전 확인사항 -</h3>
+                            <ul class="list">
+                                <li><strong class="title">- 고객님의 사정에 의해 예약을 취소하시거나,<br>&nbsp;&nbsp;예약 날짜를 변경하실 경우 예약 취소에 해당되며,<br>&nbsp;&nbsp;아래와 같이 위약금이
+                                        적용되므로 신중히 고려하여 예약해주시기 바랍니다.</strong></li>
+                                <li><strong class="title">- 천재지변으로 인한 당일 예약취소를 하실 경우에도 환불이 불가능합니다.</strong></li>
+                                <li><strong class="title">- 당일 예약하시고 입금한 후 당일 취소하셔도 예약일 기준으로 아래 환불규정에 해당됩니다.</strong></li>
+                                <li><strong class="title">- 예약 당일부터 24시까지는 1일 전이며,<br>&nbsp;&nbsp;그 이후부터 24시간 경과 시 1일씩 경과하는 것으로
+                                        계산합니다.</strong></li>
+                                <li><strong class="title">- 아래 환불규정은 고객님과 리조트의 공정한 계약이므로 동의하신다면 진행하시기 바랍니다.</strong></li>
+                                <li><strong class="title">- 환불은 입금자명으로 되며, 입금 시 송금수수료는 제외한 후 입금됩니다.</strong></li>
+                                <li><strong class="title">- 예약취소시 입실일과 관계없이 기본 취소 수수료 10%가 부과됩니다.</strong></li>
+                                <li><strong class="title">- 입금대기인 경우 예약을 원하는 문의가 많으므로 가급적 6시간 이내에 입금 부탁드립니다.<br>&nbsp;&nbsp;6시간 이후 자동취소됩니다.</strong></li>
+                            </ul>
+                        </div>
+                        <div class="res_t04">
+                            <h3>- 환불규정 -</h3>
+                            <ul class="list">
+                                <li><strong class="title">예약 취소시 기본 수수료 10%</strong></li>
+                                <li>10일 전 100% 환불 &nbsp;&nbsp;&nbsp;9일 전 90% 환불 &nbsp;&nbsp;&nbsp;8일 전 80% 환불 &nbsp;&nbsp;&nbsp;7일 전 70% 환불</li>
+                                <li>6일 전 60% 환불 &nbsp;&nbsp;&nbsp;5일 전 50% 환불&nbsp;&nbsp;&nbsp; 4일 전 40% 환불 &nbsp;&nbsp;&nbsp;3일 전 30% 환불</li>
+                                <li>2일 전 20% 환불 &nbsp;&nbsp;&nbsp;1일 전 20% 환불</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </header>
+
+        <nav class="gnb_b">
+            <ul class="depth01">
+                <li><a href="#">ACCOMMODATION</a>
+                    <ul class="depth02">
+                        <li><a href="#">프레스티지</a></li>
+                        <li><a href="#">로얄 스위트</a></li>
+                        <li><a href="#">프리미어 스파</a></li>
+                        <li><a href="#">프리미어 풀</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">POOL</a>
+                    <ul class="depth02">
+                        <li><a href="#">루프탑 인피니티 풀</a></li>
+                        <li><a href="#">메인 풀</a></li>
+                        <li><a href="#">프리미어 풀</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FACILITY</a>
+                    <ul class="depth02">
+                        <li><a href="#">로비</a></li>
+                        <li><a href="#">콘서트 홀</a></li>
+                        <li><a href="#">펫 룸</a></li>
+                        <li><a href="#">BBQ공간&BBQ세트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">BAKERY CAFE</a>
+                    <ul class="depth02">
+                    </ul>
+                </li>
+                <li><a href="#">RESERVATION</a>
+                    <ul class="depth02">
+                        <li><a href="#">실시간예약</a></li>
+                        <li><a href="#">예약안내</a></li>
+                        <li><a href="#">스페셜 오퍼</a></li>
+                        <li><a href="#">공지사항&소식</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main id="main">
+            <section class="section con01">
+                <div class="main_slider">
+                    <figure class="itm01">
+                        <div class="slg">
+                            <strong>High-end Luxury Poolvilla&Resort</strong>
+
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="slg">
+                            <strong>High-end Luxury Poolvilla&Resort</strong>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="slg">
+                            <strong>High-end Luxury Poolvilla&Resort</strong>
+                        </div>
+                    </figure>
+                </div>
+                <div class="mouse">
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+
+            <section class="section con02">
+                <div class="container">
+                    <div class="about">
+                        <img src="./img/sec1_pro01.jpg" alt="">
+                        <img src="./img/sec1_pro02.jpg" alt="">
+                        <img src="./img/sec1_pro03.jpg" alt="">
+                        <img src="./img/sec1_pro04.jpg" alt="">
+                        <img src="./img/sec1_pro05.jpg" alt="">
+                    </div>
+                    <div class="note">
+                        <strong>자연 속 숨겨진,<br>나만의 쉼을 위한 공간</strong>
+                        <h2>ELYSTAY</h2>
+                        <div class="n_t">
+                            <p>살면서 지금껏 보지 못한 격이 다른<br>압도감에 첫만남의 순간부터 몰려오는 감동</p>
+                            <p class="n">국내 최고의 명산 내장산을 고스란히 품어 머무는 내내 파노라마처럼<br>감상할 수 있는 환상적인 뷰</p>
+                            <p class="no">아름다운 자연의 순간들과 조우할 수 있는 테라스<br>여행지에서의 하루를 마무리 해 줄 스파
+                            </p>
+                        </div>
+                        <div class="check">
+                            <span><i class="xi-check"></i></span>
+                            <span><i class="xi-check"></i></span>
+                            <span><i class="xi-check"></i></span>
+                        </div>
+                        
+                        <div class="Contact">
+                            <h3>Contact</h3>
+                            <p>tel<a>010-2998-5006</a></p>
+                            <p>instagram<a>elystay.resort</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section con03">
+                <h2>ROOM</h2>
+                <p>엘리스테이에서 격이 다른 휴식과 여유를 경험해보세요.</p>
+                <ul class="tabm">
+                    <li class="on"><a href="#!">프레스트지</a></li>
+                    <li><a href="#!">로열 스위트</a></li>
+                    <li><a href="#!">프리미어 스파</a></li>
+                    <li><a href="#!">프리미어풀</a></li>
+                </ul>
+                <div class="tabm_bar">
+                    <div class="dot"><span></span></div>
+                    <span></span>
+                </div>
+                <div class="container">
+                    <div class="tab_con">
+                        <div class="left_text">
+                            <div class="l_tex">
+                                <div class="l_top">
+                                    <h3>프레스트지 101,201,301</h3>
+                                    <p>고급 럭셔리를 담고 VVIP만을 위한 최상의 휴식공간</p>
+                                </div>
+                                <div class="l-bottom">
+                                    <strong>객실정보<span>거실,개별 테라스,침실1개,퀸 베드 3개,스위밍 스파</span></strong>
+                                    <strong>인원<span>기준6명 / 최대8명</span></strong>
+                                    <strong>면적<span>76평형</span></strong>
+                                    <strong>체크인/아웃<span>PM 03:00 /AM 11:00</span></strong>
+                                    <p><a href="#!">상세 보기</a></p>
+                                </div>
+                            </div>
+                            <div class="l_tex">
+                                <div class="l_top">
+                                    <h3>로열 스위트 101~102 / 201~202</h3>
+                                    <p>고급 럭셔리를 담고 VVIP만을 위한 최상의 휴식공간</p>
+                                </div>
+                                <div class="l-bottom">
+                                    <strong>객실정보<span>거실,개별 테라스,퀸 베드 2개,스위밍 스파</span></strong>
+                                    <strong>인원<span>기준4명 / 최대6명</span></strong>
+                                    <strong>면적<span>51평형</span></strong>
+                                    <strong>체크인/아웃<span>PM 03:00 /AM 11:00</span></strong>
+                                    <p><a href="#!">상세 보기</a></p>
+                                </div>
+        
+                            </div>
+                            <div class="l_tex">
+                                <div class="l_top">
+                                    <h3>프리미어 스파 201~701</h3>
+                                    <p>고급 럭셔리를 담고 VVIP만을 위한 최상의 휴식공간</p>
+                                </div>
+                                <div class="l-bottom">
+                                    <strong>객실정보<span>거실,개별 테라스,침실 1개,퀸 베드 1개,스파</span></strong>
+                                    <strong>인원<span>기준2명 / 최대4명</span></strong>
+                                    <strong>면적<span>34평형</span></strong>
+                                    <strong>체크인/아웃<span>PM 03:00 /AM 11:00</span></strong>
+                                    <p><a href="#!">상세 보기</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="l_tex">
+                                <div class="l_top">
+                                    <h3>프리미어 풀 202~702</h3>
+                                    <p>고급 럭셔리를 담고 VVIP만을 위한 최상의 휴식공간</p>
+                                </div>
+                                <div class="l-bottom">
+                                    <strong>객실정보<span>거실,개별 테라스,퀸 베드 1개,스위밍스파</span></strong>
+                                    <strong>인원<span>기준2명 / 최대4명</span></strong>
+                                    <strong>면적<span>44평형</span></strong>
+                                    <strong>체크인/아웃<span>PM 03:00 /AM 11:00</span></strong>
+                                    <p><a href="#!">상세 보기</a></p>
+                                </div>
+                            </div>
+                           
+                        </div>
+    
+                        <div class="p_slider">
+                            <figure><img src="./img/sec2_pro01.jpg" alt=""></figure>
+                            <figure><img src="./img/sec2_pro02.jpg" alt=""></figure>
+                            <figure><img src="./img/sec2_pro03.jpg" alt=""></figure>
+                            <figure><img src="./img/sec2_pro04.jpg" alt=""></figure>
+                        </div>
+                        <div class="room_btn">
+                            <i class="xi-angle-left"></i>
+                            <i class="xi-angle-right"></i>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="section con04">
+                <h2>FACILITY</h2>
+                <p>엘리스테이만의 부대시설</p>
+                <div class="container">
+                    <figure>
+                        <a href="#!" class="case">
+                            <img src="./img/sec3_pro01.jpg" alt="">
+                        </a>
+                        <strong>LOBBY</strong>
+                    </figure>
+                    <figure>
+                        <a href="#!" class="case">
+                            <img src="./img/sec3_pro02.jpg" alt="">
+                        </a>
+                        <strong>COMCERT HALL</strong>
+                    </figure>
+                    <figure>
+                        <a href="#!" class="case">
+                            <img src="./img/sec3_pro03.jpg" alt="">
+                        </a>
+                        <strong>PET ROOM</strong>
+                    </figure>
+                    <figure>
+                        <a href="#!" class="case">
+                            <img src="./img/sec3_pro04.jpg" alt="">
+                        </a>
+                        <strong>BBQ Zone & BBQ Set</strong>
+                    </figure>
+                    
+                </div>
+
+            </section>
+            <section class="section con05">
+                <div class="container">
+                    <div class="pool_slider">
+                        <img src="./img/sec4_pro01.jpg" alt="">
+                        <img src="./img/sec4_pro02.jpg" alt="">
+                        <img src="./img/sec4_pro03.jpg" alt=""> 
+                    </div>
+                    <span></span>
+                    <span></span>
+                    <div class="pool_text">
+                        <div class="p_tex">
+                            <h2>ROOFTOP & INFINITY</h2>
+                            <h3>MAIN POOL</h3>
+                            <p>리조트 단지의 중앙 메인 홀에 위치하여
+                                여러분을 맞이하는 오픈된 인피니티 수영장
+                            </p>
+                            <strong>메인 풀 운영시간 : 15:00 ~ 20:30</strong>
+                        </div>
+                        <div class="p_tex">
+                            <h2>ROOFTOP & INFINITY</h2>
+                            <h3>ROOF TOP INFINITY POOL</h3>
+                            <p>무려 8층 높이에서 내장산이 파노라마처럼
+                                <br>펼쳐지는 환상적인 뷰를 감상하며 즐기는 루프탑 수영장
+                            </p>
+                            <strong>인피니티풀 운영시간 : 15:00 ~ 20:30</strong>
+                        </div>
+                        <div class="p_tex">
+                            <h2>ROOFTOP & INFINITY</h2>
+                            <h3>PREMIER POOL</h3>
+                            <p>프레스티지와 로얄 스위트 객실의 테라스에
+                                개별로 준비된 스위밍 스파
+                            </p>
+                            <strong></strong>
+                        </div>
+                   
+                    
+                </div>
+                
+                </div>
+            </section>
+            <footer class="section footer  fp-auto-height">
+                <div class="container">
+                    
+                        <div class="ft_left">
+                            <figure>
+                            <img src="./img/logo_g.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="ft_middle">
+                        <h2>CUSTOMER CENTER</h2>
+                        <p>ACC : 광주은행 1107-021-242420 엘리스테이</p>
+                        <strong>Tel : 010-2998-5006</strong>
+                        <span>객실예약 : 010-2998-5006</span>
+                     </div>
+                     <div class="ft_right">
+                        <ul>
+                           <li><a href="#"><i class="xi-facebook-official"></i></a></li>
+                           <li><a href="#"><i class="xi-instagram"></i></a></li>
+                           <li><a href="#"><i class="xi-naver-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container02">
+                    <ul class="customer">
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CUSTOMER SERVICE</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">사업자 정보확인</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">채용안내</a></li>
+                    </ul>
+                    <ul class="service">
+                        <li><a href="#!"> [상호명] 엘리스테이</a></li>
+                        <li><a href="#!"> [대표] 김기현</a></li>
+                        <li><a href="#!">[사업자등록번호] 196-88-00430</a></li>
+                        <li><a href="#!"> [통신판매업번호] 제2021-전북정읍-0149호</a></li>
+                    </ul>
+                    <address>Copyright © 2021 엘리스테이 All Rights reserved.</address> 
+                </div>    
+            </footer>
+        </main>
+
+        <!--    메뉴바 시작    -->
+        <ul class="navbar">
+            <li><a href="#c01">home</a></li>
+            <li><a href="#c02">about</a></li>
+            <li><a href="#c03">room</a></li>
+            <li><a href="#c04">pool</a></li>
+            <li><a href="#c05">review</a></li>
+        </ul>
+        <!--    메뉴 바 끝    -->
+
+
+    </div>
+</body>
+
+</html>
