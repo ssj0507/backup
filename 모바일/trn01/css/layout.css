@@ -1,1 +1,30 @@
-.container{height: 900vh;display:grid;}
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+* {
+  outline: 1px solid #f00;
+}
+.wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+/*첫번째 메인*/
+.sc01 {
+  position: relative;
+}
+.sc01 .text {
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text h1 {
+  font-size: 5vh;
+  text-align: center;
+}
+.sc02 {
+}
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+.m_text {
+  text-align: center;
+}
