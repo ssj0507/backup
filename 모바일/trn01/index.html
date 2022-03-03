@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="./css/fullpage.css">
-  <link rel="stylesheet" href="./layout.css?ver=1.0" />
+  <link rel="stylesheet" href="./css/layout.css?ver=1.0" />
   <script src="./js/jquery-1.12.4.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/fullpage.min.js"></script>
@@ -17,12 +17,22 @@
 </head>
 
 <body>
-
   <div class="wrap">
-
     <main id="main">
-
       <section class="section sc01">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+        </div>
         <div class="text">
           <h1>우리 결혼합니다.</h1>
           <p>한신랑 <i class="xi-heart"></i>김신부</p>
@@ -30,6 +40,17 @@
       </section>
       <section class="section sc02">
         <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%" style="position:absolute;top:0px;">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
           <div class="main_slider">
             <img src="./img/main_01.jpg" alt="">
             <img src="./img/main_02.jpg" alt="">
@@ -45,7 +66,6 @@
               신라호텔</strong>
           </div>
         </div>
-
       </section>
       <section class="section sc03">
         <div class="top_txt">
@@ -59,6 +79,8 @@
             That's all I wanna ask of you </strong>
           <span>한동근, &#60 Ask of you &#62 </span>
         </div>
+        <!-- <a href="https://naver.com" target="_blank">새로운 창으로 이동</a>
+        <a href="https://naver.com">해당 페이지에서 이동</a> -->
         <div class="mid_txt">
           <h3>초대합니다</h3>
           <strong>모든 것이 새로워지는 봄날,<br>
@@ -70,14 +92,13 @@
           <p>동근 and 신부</p>
         </div>
         <div class="bott_txt">
-          <strong>신랑 부모님 <span>의 아들 </span>신랑 이름</strong>
-          <strong>신부 부모님 <span>의 딸 </span>신부 이름</strong>
+          <strong>신랑 부모님 <span>의 아들 </span>신랑 이름<br>
+            신부 부모님 <span>의 딸 </span>신부 이름</strong>
         </div>
       </section>
       <section class="section sc04">
         <h2>GALLERY</h2>
         <div class="pic">
-          <figure><img src="" alt=""></figure>
         </div>
         <div class="movie"></div>
       </section>
