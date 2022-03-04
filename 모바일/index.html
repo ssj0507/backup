@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>모바일 청첩장</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/fullpage.css">
+  <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+  <link rel="stylesheet" href="./css/layout.css?ver=1.0" />
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/fullpage.min.js"></script>
+  <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="./js/layout.js?ver=1.0"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <main id="main">
+      <section class="section sc01">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+        </div>
+        <div class="text">
+          <h1>우리 결혼합니다</h1>
+          <p>한신랑 <i class="xi-heart"></i>김신부</p>
+        </div>
+      </section>
+
+      <section class="section sc02">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%" style="position:absolute;top:0px;">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+          <div class="main_slider">
+            <img src="./img/main_01.jpg" alt="">
+            <img src="./img/main_02.jpg" alt="">
+            <img src="./img/main_03.jpg" alt="">
+            <img src="./img/main_04.jpg" alt="">
+            <img src="./img/main_05.jpg" alt="">
+          </div>
+          <div class="m_text">
+            <h2>Wedding</h2>
+            <p>한신랑 & 김신부</p>
+            <strong>2202년 05월 07일 토요일<br>
+              오후 2시 15분<br>
+              신라호텔</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sc03">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+          <div class="sc03_txt">
+            <div class="top_txt">
+              <strong>이 많은 사람들 중에<br>
+                우리가 우리가 되어진 건<br>
+                둘 없을 행운이기에<br>
+                내가 더 놓칠 수 없고<br>
+                너만 더 바라볼 테니<br>
+                나와 함께 걷자고<br>
+                내가 널 사랑한다고<br>
+                That's all I wanna ask of you </strong>
+              <span>한동근, &#60Ask of you&#62 </span>
+            </div>
+            <!-- <a href="https://naver.com" target="_blank">새로운 창으로 이동</a>
+            <a href="https://naver.com">해당 페이지에서 이동</a> -->
+            <div class="mid_txt">
+              <h2>초대합니다</h2>
+              <strong>살랑이는 바람결에<br>
+                사랑이 묻어나는 계절입니다. <br>
+                하나가 될 뜻깊은 날을 맞게 되었습니다.<br>
+                소중하고 힘찬 내디딤이 될 수 있도록<br>
+                꼭 오셔서 지켜봐 주시면 감사하겠습니다.
+
+              </strong>
+
+            </div>
+            <div class="bott_txt">
+              <strong>김신랑·김신랑<span>의 아들 </span>김신랑<br>
+                김신부·김신부 <span>의 &#160;딸&#160;</span>김신부</strong>
+            </div>
+            <div class="line">
+              <div class="btn">
+                <figure>
+                  <img src="./img/icon01.svg" alt="">
+                  <strong>신랑측으로 연락하기</strong>
+                </figure>
+                <figure>
+                  <img src="./img/icon02.svg" alt="">
+                  <strong>신부측으로 연락하기</strong>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="section sc04">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%" style="position:absolute;top:0px;">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+          <div class="sc04_txt">
+            <h2>GALLERY</h2>
+            <div class="container02">
+              <figure>
+                <img src="./img/main_01.jpg" alt="">
+                <img src="./img/main_02.jpg" alt="">
+                <img src="./img/main_03.jpg" alt="">
+                <img src="./img/main_04.jpg" alt="">
+                <img src="./img/main_05.jpg" alt="">
+                <img src="./img/main_01.jpg" alt="">
+                <img src="./img/main_02.jpg" alt="">
+                <img src="./img/main_03.jpg" alt="">
+                <img src="./img/main_04.jpg" alt="">
+              </figure>
+
+            </div>
+            <div class="movie">
+              <figure>
+                <div class="mov">
+                  <iframe src="https://www.youtube.com/embed/Re8EYhhLnLo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sc05">
+        <div class="container">
+          <!--종이 텍스처-->
+          <svg width="100%" height="100%" style="position:absolute;top:0px;">
+            <filter id='noise' x='0' y='0' width='100%' height='100%'>
+              <feTurbulence type="fractalNoise" baseFrequency='0.025' numOctaves="5" result='noise' />
+              <feDiffuseLighting in='noise' lighting-color='#ff0' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='80' />
+              </feDiffuseLighting>
+            </filter>
+            <rect x="0" y="0" width="100%" height="100%" filter="url(#noise)" fill="none">
+          </svg>
+          <!--종이텍스처 끝-->
+        </div>
+        <div class="sc06_txt">
+          <h2>오시는 길</h2>
+          <div class="container02">
+            <div class="map_btn">
+              <a href="http://naver.me/FNuTLJZE" target="_blank"><img src="./img/Tmap.svg" alt="네이버맵 아이콘">
+              </a>
+              <a href="http://naver.me/FNuTLJZE" target="_blank"><img src="./img/Kmap.svg" alt="티맵 아이콘">
+              </a>
+              <a href="http://kko.to/phyT5Toql" target="_blank"><img src="./img/Kmap.svg" alt="카카오맵 아이콘">
+              </a>
+
+            </div>
+            <div class="map">
+              <figure></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sc06">05</section>
+    </main>
+  </div>
+</body>
+
+
+
+
+</html>
