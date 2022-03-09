@@ -22,7 +22,7 @@ body {
   background: #354652;
 
   z-index: 77777;
-  animation: load-animation 0s forwards;
+  animation: load-animation 30s forwards;
 }
 @keyframes load-animation {
   0% {
