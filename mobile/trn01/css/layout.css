@@ -1,0 +1,951 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+* {
+  outline: 1px solid #f00--;
+}
+html {
+}
+body {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/*첫번째 메인---시작*/
+/*로딩 화면*/
+#loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #354652;
+
+  z-index: 77777;
+  animation: load-animation 30s forwards;
+}
+@keyframes load-animation {
+  0% {
+  }
+  70% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+.l_slider {
+  width: auto;
+  display: none;
+}
+.l_slider img {
+  height: 100%;
+}
+
+/*첫번째 메인---끝*/
+.wrap {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/*두번째 세션---시작*/
+.sc02 {
+  position: relative;
+}
+/*사진 슬라이드*/
+.main_slider {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.main_slider img {
+  height: 110vw;
+}
+/*사진 슬라이드-밑에 글자*/
+.sc02 .m_text {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  margin: 0 30px 0 30px;
+  z-index: 999;
+}
+/*사진 슬라이드-밑에 글자(wedding)*/
+.m_text h2 {
+  text-align: left;
+  font-family: "MonteCarlo", cursive;
+  font-size: 11vh;
+  width: 100%;
+  margin-bottom: 25px;
+  letter-spacing: 1.2vw;
+}
+/*사진 슬라이드-밑에 글자 (신랑 신부 성함)*/
+.m_text p {
+  font-size: 3vh;
+  margin-bottom: 15px;
+}
+.m_text strong {
+  font-size: 2vh;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+}
+/*두번째 메인---끝*/
+
+/*세번째 메인---시작*/
+
+.sc03 {
+  position: relative;
+}
+/*가사내용*/
+.sc03 .sc03_txt {
+  padding: 0 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  color: #333;
+  height: 100%;
+  padding-top: 13%;
+  z-index: 9999;
+}
+
+.sc03 .top_txt {
+  font-family: "Nanum Pen Script", cursive;
+}
+.top_txt strong {
+  display: block;
+  font-size: 4vw;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  margin-bottom: 4vw;
+}
+.top_txt span {
+  display: block;
+  font-size: 4vw;
+  font-weight: 300;
+  margin-bottom: 12vw;
+}
+
+/*초대글*/
+.mid_txt {
+  font-family: "Nanum Pen Script", cursive;
+}
+.mid_txt h2 {
+  font-size: 8vw;
+  font-weight: 500;
+  color: #ff9e7d;
+  margin-bottom: 8vw;
+}
+.mid_txt strong {
+  display: block;
+  font-size: 4.5vw;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.2;
+  margin-bottom: 8vw;
+}
+/*신랑 신부 부모님 성함*/
+.bott_txt {
+  font-family: "Nanum Pen Script", cursive;
+}
+.bott_txt strong {
+  display: block;
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 13vw;
+  letter-spacing: 0.2rem;
+}
+.bott_txt span {
+  font-size: 3.5vw;
+  font-weight: 300;
+}
+/*신랑신부 연락처*/ /*전화번호랑 계좌번호위에 쓰는 선*/
+.line {
+  border-top: 1px solid #ececec;
+  text-align: center;
+  padding-top: 6vw;
+}
+.btn {
+  display: flex;
+}
+.btn figure {
+  margin: 0 auto;
+}
+.btn figure img {
+  width: 40%;
+}
+.btn figure strong {
+  display: block;
+  font-size: 3.5vw;
+  font-weight: 300;
+  margin-top: 3vw;
+}
+
+/*신랑 신부연락처 팝업 만들기*/
+.tel_m,
+.tel_w {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.tel_m > div,
+.tel_w > div {
+  width: 100%;
+  height: 70vw;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.tel_m > div > i,
+.tel_w > div > i {
+  position: absolute;
+  top: 4vw;
+  right: 5vw;
+  font-size: 5vw;
+  color: #333;
+  cursor: pointer;
+}
+.tel_m > div > img,
+.tel_w > div > img {
+  margin: 6vw 0 2vw 2vw;
+  width: 30%;
+}
+.tel_m > div > strong,
+.tel_w > div > strong {
+  display: block;
+  text-align: center;
+  margin-bottom: 5vw;
+  font-size: 4vw;
+}
+
+/*전화번호 창 아이콘*/
+.tel_btn {
+  display: flex;
+  width: 330px;
+  color: #333;
+  font-weight: 300;
+  font-size: 4vw;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+.tel_btn > li {
+  display: inline-block;
+  margin: 4vw auto;
+}
+.tel_btn i {
+  font-size: 5vw;
+  border-radius: 50%;
+  background: #999;
+  padding: 2vw;
+  color: #fff;
+  margin-left: 5px;
+}
+
+/*네번째 섹션 시작*/
+/*갤러리 글자*/
+.sc04 {
+  position: relative;
+}
+.sc04 .sc04_txt {
+  font-family: "Noto Serif KR", serif;
+  /* padding:0 15px; */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 100%;
+  padding-top: 12%;
+  color: #333;
+  z-index: 9999;
+}
+.sc04 .sc04_txt h2 {
+  font-size: 6vw;
+  font-weight: 500;
+  color: #ff9e7d;
+  margin-bottom: 8vw;
+}
+
+/*갤러리 사진*/
+.m-p-g {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.m-p-g__thumbs-img {
+  width: 110px;
+  height: 110px;
+  padding: 1vw 0;
+  margin: 0;
+  /*  float: left; */
+  vertical-align: bottom;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  /* opacity: 0; */
+  filter: brightness(100%);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  will-change: opacity, transform;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.m-p-g__thumbs-img.active {
+  z-index: 50;
+}
+.m-p-g__thumbs-img.layout-completed {
+  opacity: 1;
+}
+.m-p-g__thumbs-img.hide {
+  opacity: 0;
+}
+.m-p-g__thumbs-img:hover {
+  filter: brightness(110%);
+}
+.m-p-g__fullscreen {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  transition: background 0.25s ease-out, visibility 0.01s 0.5s linear;
+  will-change: background, visibility;
+  backface-visibility: hidden;
+  z-index: 99999;
+}
+.m-p-g__fullscreen.active {
+  transition: background 0.25s ease-out, visibility 0.01s 0s linear;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.95);
+}
+.m-p-g__fullscreen-img {
+  pointer-events: none;
+  position: absolute;
+  transform-origin: left top;
+  top: 50%;
+  left: 50%;
+  max-height: 100vh;
+  max-width: 100%;
+  visibility: hidden;
+  will-change: visibility;
+  transition: opacity 0.5s ease-out;
+}
+.m-p-g__fullscreen-img.active {
+  visibility: visible;
+  opacity: 1 !important;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.5s ease-out;
+}
+.m-p-g__fullscreen-img.almost-active {
+  opacity: 0;
+  transform: translate3d(0, 0, 0) !important;
+}
+.m-p-g__controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  height: 20vh;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.55) 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.m-p-g__controls.active {
+  opacity: 1;
+  visibility: visible;
+}
+.m-p-g__controls-close,
+.m-p-g__controls-arrow {
+  appearance: none;
+  border: none;
+  background: none;
+}
+.m-p-g__controls-close:focus,
+.m-p-g__controls-arrow:focus {
+  outline: none;
+}
+.m-p-g__controls-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+}
+.m-p-g__controls-arrow:hover {
+  opacity: 1;
+}
+.m-p-g__controls-arrow--prev {
+  left: 0;
+  padding-left: 3vw;
+  justify-content: flex-start;
+}
+.m-p-g__controls-arrow--next {
+  right: 0;
+  padding-right: 3vw;
+  justify-content: flex-end;
+}
+.m-p-g__controls-close {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.m-p-g__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  transition: all 0.25s ease-out;
+}
+.m-p-g__btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.m-p-g__alertBox {
+  position: fixed;
+  z-index: 999;
+  max-width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19);
+  color: grey;
+}
+
+.demo-btn {
+  display: inline-block;
+  margin: 0 2.5px 4vh 2.5px;
+  text-decoration: none;
+  color: grey;
+  padding: 15px;
+  line-height: 1;
+  min-width: 140px;
+  background: rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+.demo-btn:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/*영상*/
+.movie {
+  padding: 0 5vw;
+
+  z-index: 999;
+}
+.mov {
+  padding-top: 135%;
+}
+.mov iframe {
+  width: 100%;
+  height: 100%;
+  /* height: 100%; */
+}
+
+/*다섯번째 섹션 */
+.sc05 {
+  position: relative;
+}
+/*오시는 길*/
+.sc05 .sc05_txt {
+  font-family: "Nanum Pen Script", cursive;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  color: #333;
+  height: 100%;
+  padding-top: 10%;
+  z-index: 9999;
+}
+.sc05 .sc05_txt h2 {
+  font-size: 8vw;
+  font-weight: 500;
+  color: #ff9e7d;
+  margin-bottom: 6vw;
+}
+/*오시는 길 아이콘*/
+.map_btn {
+  display: flex;
+  margin: 0 105px;
+}
+
+.map_btn figure {
+  flex: 1;
+  margin-bottom: 4vw;
+  margin-left: 4vw;
+}
+.map_btn figure:first-child {
+  margin-left: 0;
+}
+
+.map_btn img {
+  width: 12vw;
+  margin-bottom: 2vw;
+}
+.map_btn strong {
+  font-family: "Noto Sans KR", sans-serif;
+  display: block;
+  font-size: 4vw;
+  font-weight: 300;
+  color: #666;
+  text-align: center;
+}
+/*약도 이미지*/
+.map {
+  width: 100%;
+  padding: 0 15px;
+}
+.map img {
+  width: 65%;
+}
+/*계좌번호*/
+.line02 {
+  padding: 0 30px;
+}
+.line h3 {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+}
+.line p {
+  font-size: 4vw;
+  margin-bottom: 5vw;
+}
+.num {
+  display: block;
+  width: 200px;
+  text-align: center;
+  /* border: 1px;
+  background: #fdf5f0;
+  border-radius: 3vw; */
+  margin: 0 auto;
+}
+.num > img {
+  display: block;
+  margin: 0 auto;
+  /*   padding: 3vw 0; */
+  width: 25%;
+}
+/* 계좌번호 팝업창 */
+.bank {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.bank > div {
+  width: 100%;
+  height: 80vw;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.bank > div > i {
+  position: absolute;
+  top: 4vw;
+  right: 5vw;
+  font-size: 5vw;
+  color: #333;
+  cursor: pointer;
+  z-index: 6;
+}
+.bank > div > img {
+  margin: 4vw 3vw;
+}
+.bank > div > strong {
+  font-family: "Noto Sans KR", sans-serif;
+  display: block;
+  text-align: center;
+  margin-bottom: 5vw;
+  font-size: 4vw;
+}
+.bank_text {
+  display: flex;
+  width: 320px;
+  color: #333;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  margin-bottom: 3vw;
+}
+
+.bank_text p {
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #333;
+  font-weight: 300;
+  font-size: 4vw;
+  margin: 5vw 8vw;
+  padding-top: 1vw;
+}
+.bank_text p:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 5vw;
+  height: 6vw;
+}
+.bank_txt01 {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #333;
+  font-weight: 300;
+  font-size: 4vw;
+  margin: 4vw 0 1vw 0;
+}
+.bank_txt02 {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  color: #333;
+  font-weight: 300;
+  font-size: 4vw;
+}
+.bt span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 3vw;
+  font-weight: 300;
+  padding-left: 20vw;
+}
+
+/*롤링 페이퍼*/
+.RollingPaper {
+  position: relative;
+}
+.container02 {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+}
+.tab_menu {
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+.tab_menu > li {
+  flex: 1;
+  text-align: center;
+  background: #f2f2f2;
+  font-size: 4vw;
+  font-weight: 400;
+  padding-bottom: 3%;
+}
+.tab_menu > li ~ li {
+  border-left: 1px solid#ccc;
+}
+.tab_menu > li.on {
+  /* height: 3vw; */
+  background: transparent;
+}
+.vvv {
+  padding-top: 15%;
+  height: 80px;
+}
+.vvv img {
+  width: 40%;
+  margin: 0 auto;
+}
+.tab_content {
+  position: relative;
+  height: 100%;
+  background: transparent;
+}
+
+/*탭메뉴 글자*/
+.tab_content > div {
+  visibility: hidden;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tab_content > div.on {
+  visibility: visible;
+}
+.tab_content > div.on h1 {
+  font-family: "Nanum Pen Script", cursive;
+  padding-top: 6%;
+  font-size: 6vw;
+  font-weight: 500;
+  text-align: center;
+  line-height: 6vw;
+  margin-bottom: 3%;
+}
+.tab_content > div.on p {
+  font-size: 4vw;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+/*사진*/
+
+.polaroid {
+}
+.polaroid > div {
+  width: 200px;
+  height: 90vw;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #bbbbbb;
+  box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.3);
+}
+.pola_pic {
+  padding: 5%;
+}
+.pola_pic img {
+  width: 100%;
+}
+
+.filebox {
+  display: flex;
+  margin-bottom: 3%;
+}
+.filebox .upload-name {
+  display: inline-block;
+  width: 70%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  vertical-align: middle;
+  padding-left: 5%;
+  font-size: 3vw;
+  font-weight: 300;
+}
+.filebox label {
+  display: inline-block;
+  cursor: pointer;
+  width: 30%;
+  background: #666;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 300;
+  padding: 5%;
+  text-align: center;
+}
+.filebox input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.txtbox_txt {
+  padding-top: 5%;
+  width: 100%;
+  height: 15vw;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  padding-left: 3%;
+  font-size: 3vw;
+  font-weight: 300;
+}
+.name01 {
+  padding: 2%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  width: 31%;
+  height: 31%;
+  border-radius: 4px;
+  margin-right: 1%;
+  font-size: 3vw;
+}
+.pass01 {
+  padding: 2%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  width: 32%;
+  height: 32%;
+  border-radius: 4px;
+  margin-right: 1%;
+  font-size: 3vw;
+}
+.btn_P {
+  padding: 2%;
+  border: 1px;
+  background-color: #666;
+  width: 31%;
+  height: 31%;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 3vw;
+}
+/*(0자/100자)*/
+.test_cntt,
+.textCount02 {
+  font-size: 3vw;
+  font-weight: 300;
+  padding-bottom: 3%;
+  color: #999;
+}
+/*글자 타입*/
+.rgyPostIt {
+  width: 320px;
+  height: 75vw;
+  margin: 0 auto;
+  border: 1px solid #f8f861;
+  border-bottom-right-radius: 60px 10px;
+  word-break: break-all;
+  background: #ffff88; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(81%, #ffff88),
+    color-stop(82%, #ffff88),
+    color-stop(82%, #ffff88),
+    color-stop(100%, #ffffc6)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    -45deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    -45deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    135deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.post_txt {
+  width: 80%;
+  padding-top: 10%;
+  margin: 0 10%;
+}
+.txt > li {
+  margin: 0 auto;
+}
+.input_txt {
+  padding-top: 3%;
+  width: 100%;
+  height: 45vw;
+  border: 1px solid #ffc81e;
+  background-color: transparent;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  padding-left: 3%;
+}
+.name {
+  padding: 1%;
+  border: 1px solid #ffdc3c;
+  background-color: transparent;
+  width: 30%;
+  height: 30%;
+  border-radius: 4px;
+  margin-right: 3%;
+}
+.pass {
+  padding: 1%;
+  border: 1px solid #ffdc3c;
+  background-color: transparent;
+  width: 30%;
+  height: 30%;
+  border-radius: 4px;
+  margin-right: 3%;
+}
+input::placeholder {
+  color: #666;
+  font-size: 3.5vw;
+}
+button {
+  padding: 2%;
+  border: 1px;
+  background-color: #ffe641;
+  width: 31%;
+  height: 31%;
+  border-radius: 4px;
+  color: #666;
+  font-size: 4vw;
+}
+/*(0자/100자)*/
+.test_cnt,
+.textCount {
+  font-size: 3vw;
+  font-weight: 300;
+  padding-bottom: 3%;
+}
+
+.sc07 {
+  background: #444;
+
+  padding: 300px;
+  z-index: 9999;
+}
+/*종이 재질*/
+.container {
+  height: 100vh;
+  display: grid;
+}
+.container > * {
+  grid-area: 0.25;
+}
